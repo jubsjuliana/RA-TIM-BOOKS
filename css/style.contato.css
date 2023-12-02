@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+
+/* Início Faixa de Redes Sociais */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Bebas Neue', sans-serif;;
+}
+.container-grid {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* Início estilo > Social > Header / Menu  */
+
+.conteudo-social {
+    background-color: #080324;
+    width: 100%;
+    position: fixed;
+    height: 35px;
+    z-index: 50;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 1.0em;
+    padding-top: 0.3%;
+}
+.conteudo-social a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    padding-left: 0.5em;
+    /* vertical-align: middle; Alinhamento  vetical dentro da div */
+}
+.conteudo-social a:hover {
+    color: white;
+}
+.conteudo-social .fa-youtube:hover {
+ color: #c4302b;
+}
+.conteudo-social .fa-facebook:hover {
+ color: #3b5998;
+}
+.conteudo-social .fa-spotify:hover {
+ color: rgb(29, 185,84)
+}
+.conteudo-social .fa-twitter:hover {
+ color: #00acee;
+}
+.conteudo-social .fa-instagram:hover {
+    background-image: linear-gradient( 190deg, #4f5bd5 ,#962fbf ,#d62976, #fa7e1e, #feda75);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+}
+ 
+
+/* Fim Faixa de Redes Sociais */
+
+
+ /* Início CSS estilo Header */
+
+ header {
+    z-index: 1;
+    background-color: #f9003d;
+    height: 80px;
+    position: fixed;
+    width: 100vw;
+    top: 35px;
+
+}
+.conteudo-header {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+.logo {
+    height: 20px;
+    left: 0;
+}
+.menu-header {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-header a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    transition: 0.3s;
+
+}
+.menu-header a:hover:not(.botao) {
+    font-size: 1.6em ;
+    color: white;
+}
+.menu-header #font {
+    font-family: 'Bebas Neue', sans-serif !important;
+    /* !important > força o objeto a utilixar a definição dentro da classe de função important */
+}
+
+.botao {
+    background-color: #a259f7;
+    height: 45px;
+    width: 150px;
+    text-align: center;
+    line-height: 47px;
+    font-size: 1.5em !important;
+    border: solid 1px #080324;
+    border-radius: 30px 10px;
+}
+.botao:hover {
+    color: white;
+    font-size: 1.6em !important;
+    height: 50px;
+    line-height: 50px;
+    width: 160px;
+    transition: 0.3s;
+    box-shadow: 4px 4px 6px #0000007a;
+  
+}
+.menu-barras {
+    display: none;
+}
+
+
+  /* Fim CSS estilo Header */
