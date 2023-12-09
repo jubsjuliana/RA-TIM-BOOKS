@@ -1,0 +1,303 @@
+  @import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+
+/* Início estilo carousel */
+  body,
+  ul {
+    margin: 0px;
+    padding: 0px;
+  }
+   #menu a {
+    font-size: 22px;
+    /* border-bottom-right-radius: 15px; */
+    /* border-bottom-left-radius: 15px; */
+    /* border-bottom: 4px solid #e4d07a; */
+    color: rgba(13, 21, 88, 0.747);
+     text-decoration: none;
+     /* font-family: sans-serif; */
+     /* font-family: 'Metal Mania', sans-serif; */
+     font-family: 'Henny Penny';
+     font-weight: 600;
+     transition: 0.4s;
+     text-align: center;
+     padding: 0 0.4em 0.2em 0.4em;
+     /* top - rigth - botton - left */
+ }
+
+#menu a:hover {
+    /* background: rgba(0, 0, 0, 0.05); */
+    font-size: 24px;
+    /* border-bottom-left-radius: 15px; */
+    /* border-bottom-right-radius:15px; */
+    /* border-collor: #006ccb; */
+    border-left:  4px solid #080677;
+    box-shadow: 1px 1px 2px #085ea585;
+}
+#carouselExampleInterval {
+    position: relative;
+    z-index: 10;
+    padding-top: 10px;
+    box-shadow: 3px 3px 6px hsla(0, 0%, 0%, 0.829); 
+   }
+   
+   /* Fim estilo carousel */
+   /* Início CSS estilo header */
+   #logo {
+    font-size: 1.5rem;
+    }
+    #logo img {
+        height: 60px;
+    }
+    #logo img:hover{
+        box-shadow: 2px 2px 4px #0d00a0;
+        transition: 0.3s;
+    }
+    #header {
+      box-sizing: border-box;
+      height: 70px;
+      padding: 1rem;
+      padding-top: px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgb(rgb(0, 38, 255), rgb(22, 99, 138), blue)
+      
+  }
+  #menu {
+      display: flex;
+      list-style: none;
+      gap: 0.5rem;
+  }
+  #btn-mobile {
+      display: none;
+  }
+  /* Fim CSS estilo header */
+  /* Início estilo carousel */
+
+#carouselExampleInterval {
+    position: relative;
+    z-index: 10;
+    padding-top: 10px;
+    box-shadow: 3px 3px 6px hsl(226, 11%, 64%); 
+   }
+   
+   /* Fim estilo carousel */
+   /* Início Estilo Media >>Mobile */
+@media (max-width: 790px) {
+    #menu{
+        display: block;
+        position: absolute;
+        width: 15em;
+        top: 70px;
+        right: 0px;
+        background: #e7e7e7;
+        transition: 0.6s;
+        z-index: 1000;
+        height: 0px;
+        padding-left: 5px;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    #menu li {
+        padding-top: 30px;
+        padding-bottom: 0px;
+        margin: 0 1rem;
+        border-bottom: #07227ebd;
+    }
+    #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: hidden;        
+    }
+    #btn-mobile {
+        display: flex;
+        padding: 0.5rem;
+        font: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;        
+    }
+    #hamburger {
+        border-top: 2px solid;
+        /* Para aumentar ou diminuir a espessura da linha do hamburger */
+        width:  30px;
+        /* Para alterar a largura do hamburge */
+        color: #083aa585;
+        /* Para alterar a cor do hamburge */
+    }
+    #hamburger::after,
+    #hamburger::before {
+        content: '';
+        display: block;
+        width: 30px;
+        /* Altera a largura do hamburger, justamente com o width anterior */
+        height: 2px;
+        background: currentColor;
+        margin-top:  4px;
+        /* Altera o espaçamento, entre as linhas do hamburger */
+        position: relative;
+        border-top: 2px solid;
+        /* Para diminuir e aumentar a espessura da linha do hamburger,juntamente com o border-top anterior */        
+    }
+    #nav.active #hamburger {
+        border-top-color:transparent ;        
+    }
+    #nav.active #hamburger::before {
+        transform:rotate(135deg) ;
+    }
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}
+
+/*Fim Estilo Media >>Mobile */
+/* Início estilo Banner Home */
+/* Para aplicar estilos na CLASS > utileze o ponto[ . ] antes do objeto */
+/* Para aplicar estilos na ID > utileze o ponto[ # ] antes do objeto */
+.section-banner-home {
+    width: 100%;
+    height: 500px;
+    margin-top: 10px;
+    padding: 50px;
+    background-color:rgb(72, 200, 231);
+    box-shadow: 3px 3px 6px hsl(0, 0%, 100%); 
+    font-family: 'Henny Penny' !important;
+    font-size: 12px;
+}
+.section-banner-home img {
+    max-height: 400px;
+    width: 70%;
+    display: block;
+    margin: auto;
+}
+.section-banner-home .texto-banner {
+    margin-top: 30px;
+    font-size: 22px;
+}
+.section-banner-home .texto-banner h1{
+    font-size: 30px;
+    width: 60%; /* width = Largura */
+    font-weight: 500; /* Espessura do Texto */
+    padding-bottom: 20px; /* Margem interna > Embaixo */
+    color:rgb(158, 14, 14)
+    }
+.section-banner-home .texto-banner p {
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: white;
+    text-align: justify;
+}
+.section-banner-home .texto-banner a{
+    color:rgb(185, 14, 14);
+    text-decoration: none;
+    background-color: rgb(36, 248, 255);
+    padding: 4px 14px;
+    font-size: 15px;    
+    }
+.section-banner-home .texto-banner a:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px #ffffff7a;
+    font-size: 18px;
+    font-weight: bold;
+}     
+
+
+/* Fim estilo Banner Home */
+/* Início whatsapp */
+.whatsapp {
+    position: fixed;
+    top: 800px;
+    left: 15px;
+    z-index: 200px;
+}
+.whatsapp img {
+    height: 60px;
+}
+/* Início efeito pulse */
+.whatsapp .pulse{
+    animation: pulse 0.7s infinite;
+    margin: 0 auto;
+    display: table;
+    margin-top: 50px;
+    animation-direction: alternate;
+    -webkit-animation-name: pulse ;
+    animation-name: pulse;
+}
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform:scale(1);
+        -webkit-filter: brightness(100%);
+    }
+    100%{
+        -webkit-transform: scale(1.1);
+        -webkit-filter: brightness(110%);
+    }
+    }
+     @keyframes pulse {
+        0% {
+            transform: scale(1);
+            filter: brightness(100%);
+        }
+        100% {
+            transform: scale(1.1);
+            filter: brightness(110%);                     
+        }
+     }
+
+/* Fim efeito pulse */
+
+/* Fim whatsapp */
+  /* Início estilo Footer (rodapé) */
+  .rodape {
+    padding: 50px 50px 0;
+    
+   }
+   .rodape .container #logo-rodape img { 
+    height: 50%;
+    width: 50%;
+    padding-left: 10px;
+    transition: transform  .3s;
+    display: block;
+   }
+   .rodape .container #logo-rodape img:hover{
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.87) ;
+   }
+   .rodape .info-contato p {
+    margin: 0;
+   }
+   .rodape .linkFooter {
+    text-decoration: none;
+    color: #0852c0;
+    font-size: 10px;
+    margin-left: 0.7rem;
+    font-family: 'Henny Penny';
+    }
+    .rodape .linlFooter:hover {
+        font-weight: bold;
+    }
+    .rodape .redes-sociais {
+        display: inline-block;
+    }
+    .rodape .redes-sociais img {
+        width: 50px;
+        height: 50px;
+        padding-left: 0;
+        margin-left: 0.8rem;
+        transition: transform .3s;
+        border-radius: 15px;
+    /* border-radius = Arredondando as extremidades da forma */
+    }
+    .rodape .redes-sociais img:hover {
+        z-index: 1;
+        transform:scale(1.5);
+        box-shadow:0 0 10px rgba(0,0,0,0.446)        
+    }
+    .rodape p.direitos {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+
+   /* Fim estilo Footer (rodapé) */

@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+
+/* Início Faixa de Redes Sociais */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Bebas Neue', sans-serif;;
+}
+.container-grid {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* Início estilo > Social > Header / Menu  */
+
+.conteudo-social {
+    background-color: #080324;
+    width: 100%;
+    position: fixed;
+    height: 35px;
+    z-index: 50;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 1.0em;
+    padding-top: 0.3%;
+    
+}
+.conteudo-social a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    padding-left: 0.5em;
+    /* vertical-align: middle; Alinhamento  vetical dentro da div */
+}
+.conteudo-social a:hover {
+    color: white;
+    text-decoration: none;
+}
+.conteudo-social .fa-youtube:hover {
+ color: #c4302b;
+}
+.conteudo-social .fa-facebook:hover {
+ color: #3b5998;
+}
+.conteudo-social .fa-spotify:hover {
+ color: rgb(29, 185,84)
+}
+.conteudo-social .fa-twitter:hover {
+ color: #00acee;
+}
+.conteudo-social .fa-instagram:hover {
+    background-image: linear-gradient( 190deg, #4f5bd5 ,#962fbf ,#d62976, #fa7e1e, #feda75);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+}
+ 
+
+/* Fim Faixa de Redes Sociais */
+
+
+ 
+
+/* Início CSS estilo Header */
+
+header {
+    z-index: 1;
+    height: 80px;
+    position: fixed;
+    width: 100vw;
+    top: 35px;
+    background-color: #da9cd6;
+    margin-bottom: 40px;
+   
+
+}
+.conteudo-header {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+   
+    
+}
+.logo {
+    height: 70px;
+}
+.menu-header {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.menu-header a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    transition: 0.3s;
+    
+}
+.menu-header a:hover:not(.botao) {
+    font-size: 1.6em ;
+    color: rgb(151, 41, 155);
+    text-decoration: none;
+}
+.menu-header #font {
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif !important;
+    /* !important > força o objeto a utilixar a definição dentro da classe de função important */
+}
+  /* Fim CSS estilo Header */
+
+   /* Início estilo contato */
+ .contact {
+    padding: 70px 0px;
+    
+    background-color:  rgba(244, 241, 112);
+    background-image: linear-gradient( to bottom, #daa6d6, rgb(196, 85, 186) ,#ebafe7 );
+ 
+  }
+ 
+  .section-title h2 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    border-bottom: 5px solid #6d116d;
+    padding-bottom: 10px;
+    display: inline-block;
+    font-family: 'Tilt Neon', sans-serif;
+    margin-top: 10%;
+  }
+  .section-title p {
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 24px;
+  }
+  .contact input,
+  .contact textarea {
+    background: #fafafa;
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 20px;
+ 
+  }
+  .contact textarea {
+    min-height: 188px;
+    max-width: 100%;
+    font-family: 'Amatic SC', sans-serif;
+ 
+  }
+
+
+  .contact .map {
+    overflow: hidden;
+    border-radius: 4px;
+    height: 70%;
+ 
+  }
+ 
+  
+  
+  
+  /* Início estilo market place */
+    .market-place {
+    width: 100%;
+    height: 180px;
+    /* margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding: 200px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+    
+  }
+  .market-place img {
+    margin-left: 70px;
+    width: 40%;
+    height: 220px;
+  }
+  
+  .market-place .dois img {
+    height: 220px;
+    width: 35%;
+    margin-left: 140px;
+    /* margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;  */
+  } 
+ 
+  /* Fim estilo market place */
+ 
+  /* Fim estilo contato */
+
+  /* Início estilo Footer (rodapé) */
+ .rodape {
+    padding: 50px 50px 0;
+  }
+  .rodape .container #logo-rodape img{
+    height: 45%;
+    width: 45%;
+    /* padding-left: 10px; */
+    transition: transform .3s;
+    display: block;
+  }
+  .rodape .container #logo-rodape img:hover {
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgba(146, 11, 161, 0.692);
+  }
+  .rodape .info-contato p {
+    margin: 0;
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 22px;
+  }
+  .rodape .linkFooter {
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+    margin-left: 0.7rem;
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 24px;
+  }
+  .rodape .linkFooter:hover {
+    font-weight: bold;
+  }
+  .rodape .redes-sociais {
+    display: inline-block;
+    
+  }
+  .rodape .redes-sociais img {
+    width: 50px;
+    height: 50px;
+    padding-left: 0;
+    margin-left: 0.8rem;
+    transition: transform .3s;
+    border-radius: 15px;
+ 
+    /* border-radius = Arredondando as extremidades da forma */
+  }
+  .rodape .redes-sociais img:hover {
+    z-index: 1;
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.446);
+  }
+  .rodape p.direitos {
+    text-align: center;
+    margin-top: 40px; 
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 20px;
+  }
+  /* Fim estilo Footer (rodapé) */
+/* Início estilo Mobile > Tablets */
+@media screen and (max-width: 1200px) {
+    .menu-header {
+        width: 60%;
+
+    }
+    .conteudo-sobre {
+        flex-direction: column;
+        align-items: center;
+    }
+    .imagem-sobre {
+        width: 80%;
+
+    }
+    .texto-sobre {
+        width: 80%;
+        margin-top: 45px;
+        display: flex;
+        flex-direction: column;
+        height: 430px;
+        justify-content: space-between;
+
+    }
+    .conteudo-info {
+        align-items: center;
+        
+    }
+    .conteudo-endereco {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 660px;
+        justify-content: space-between;
+    }
+    .conteudo-endereco h2 {
+        align-self: flex-start;
+
+    }
+    .texto-endereco p {
+        width:  100%;
+
+    }
+
+
+
+}
+.container-mapa {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 20%;
+}
+.mapa-responsivo {
+    position: absolute;
+    margin-top: 10px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+.video-responsivo {
+    position: absolute;
+    margin-top: 10px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+.container-video {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 30% ;
+    max-height: 200px;
+}
+
+
+
+/* Fim estilo Mobile > Tablets */
