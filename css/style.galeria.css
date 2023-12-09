@@ -83,7 +83,7 @@
         width: 15em;
         top: 70px;
         right: 0px;
-        background: #e7e7e7;
+        background: #424242;
         transition: 0.6s;
         z-index: 1000;
         height: 0px;
@@ -116,7 +116,7 @@
         /* Para aumentar ou diminuir a espessura da linha do hamburger */
         width:  30px;
         /* Para alterar a largura do hamburge */
-        color: #083aa585;
+        color: rgb(253, 237, 167);
         /* Para alterar a cor do hamburge */
     }
     #hamburger::after,
