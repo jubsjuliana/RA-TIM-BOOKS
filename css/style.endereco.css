@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+
+/* Início estilo carousel */
+  body,
+  ul {
+    margin: 0px;
+    padding: 0px;
+  }
+   #menu a {
+    font-size: 22px;
+    /* border-bottom-right-radius: 15px; */
+    /* border-bottom-left-radius: 15px; */
+    /* border-bottom: 4px solid #e4d07a; */
+    color: rgba(145, 84, 4, 0.986);
+     text-decoration: none;
+     /* font-family: sans-serif; */
+     /* font-family: 'Metal Mania', sans-serif; */
+     font-family: 'Henny Penny';
+     font-weight: 600;
+     transition: 0.4s;
+     text-align: center;
+     padding: 0 0.4em 0.2em 0.4em;
+     /* top - rigth - botton - left */
+     
+ }
+
+#menu a:hover {
+    /* background: rgba(0, 0, 0, 0.05); */
+    font-size: 24px;
+    /* border-bottom-left-radius: 15px; */
+    /* border-bottom-right-radius:15px; */
+    /* border-collor: #006ccb; */
+    border-left:  4px solid #c28f03;
+    box-shadow: 2px 2px 4px #886401;
+}
+#carouselExampleInterval {
+    position: relative;
+    z-index: 10;
+    padding-top: 10px;
+    box-shadow: 3px 3px 6px hsla(0, 0%, 0%, 0.829); 
+   }
+   
+   /* Fim estilo carousel */
+   /* Início CSS estilo header */
+   #logo {
+    font-size: 1.5rem;
+    }
+    #logo img {
+        height: 60px;
+        margin: 4px;
+    }
+    #logo img:hover{
+
+        box-shadow: 3px 3px 3px  #886401;
+        transition: 0.3s;
+    }
+    #header {
+      box-sizing: border-box;
+      height: 70px;
+      padding: 1rem;
+      padding-top: px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgb(rgb(0, 38, 255), rgb(22, 99, 138), blue);
+      background-color: #000000;
+      border-bottom:  4px solid rgb(99, 79, 40);    
+      
+  }
+  #menu {
+      display: flex;
+      list-style: none;
+      gap: 0.5rem;
+  }
+  #btn-mobile {
+      display: none;
+  }
+  /* Fim CSS estilo header */
+
+ 
+
+   /* Início estilo contato */
+ .contact {
+    padding: 70px 0px;
+    display: flex;
+    background-color:  rgba(244, 241, 112);
+    background-image: linear-gradient( to bottom, rgb(99, 79, 40), rgb(162, 138, 62), rgb(99, 79, 40),rgb(162, 138, 62));
+ 
+  }
+ 
+  .section-title h2 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    border-bottom: 5px solid rgb(99, 79, 40);
+    padding-bottom: 10px;
+    display: inline-block;
+    font-family: 'Henny Penny';
+    margin-top: 10%;
+    justify-content: center;
+    align-items: center;
+  }
+  .section-title p {
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 24px;
+    align-items: center;
+  }
+ 
+
+
+  .contact .map {
+    overflow: hidden;
+    border-radius: 4px;
+    height: 600px;
+    width: 1000px;
+    justify-content: center;
+    
+    display: flex;
+ 
+  }
+ 
+  
+  
+  
+  /* Início estilo market place */
+    .market-place {
+    width: 100%;
+    height: 180px;
+    
+   
+    /* margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding: 200px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+    
+  }
+  .market-place img {
+  
+    width: 400px;
+    height: 220px;
+    
+   
+  }
+  
+  
+ 
+  /* Fim estilo market place */
+ 
+  /* Fim estilo contato */
+
+  /* Início Whatsapp*/
+.whatsapp {
+    position: fixed;
+    top: 400px;
+    right: 20px;
+    z-index: 100;    
+}
+.whatsapp img {
+    height: 60px;
+}
+/* Início efeito pulse */
+.whatsapp .pulse {
+    animation: pulse 0.7s infinite;
+    margin: 0 auto;
+    display: table;
+    margin-top: 50px;
+    animation-duration: alternate;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+}
+@-webkit-keyframes pulse {
+ 0% {
+    -webkit-transform: scale(1);
+    -webkit-filter: bringhtness(100%);
+ }
+ 100% {
+    -webkit-transform: scale(1.1);
+    -webkit-filter: bringhtness(110%);
+ }
+}
+
+@keyframes pulse {
+0% {
+    transform: scale(1);
+    filter: brightness(100%);
+}
+
+100%{
+   transform: scale(1.1);
+     filter: brightness(110%);
+}
+}
+/* Fim efeito pulse */
+/* Fim Whatsapp*/
+
+/* Início Estilo Media >> Mobile */
+@media (max-width: 790px) {
+
+    #menu a:hover {
+     
+       /* background: rgba(0, 0, 0, 0.05); */
+       font-size: 24px;
+       /* border-bottom-right-radius: 15px; */
+       /* border-bottom-left-radius: 15px; */
+       /* border-color: #c4b059; */
+       border-left: 4px #f7f1f1;
+       border-bottom: 4px solid #c4b059;
+       box-shadow: 2px 2px 4px #c4b059;
+      
+    }
+ 
+    #menu {
+       display: block;
+       position: absolute;
+       width: 15em;
+       top: 70px;
+       right: 0px;
+       background: #e7e7e7;
+       transition: 0.6s;
+       z-index: 1000;
+       height: 0px;
+       padding-left: 5px;
+       visibility: hidden;
+       overflow: hidden;
+    }
+    #menu li {
+       padding-top: 30px;
+       padding-bottom: 0px;
+       margin: 0 1rem;
+       border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    }
+    #nav.active #menu {
+       height: calc(100vh - 70px);
+       visibility: visible;
+       overflow-y: hidden;
+ 
+    }
+    #btn-mobile {
+       display: flex;
+       padding: 0.5rem 1rem;
+       font: 1rem;
+       border: none;
+       background: none;
+       cursor: pointer;
+       gap: 0.5rem;
+    }
+    #hamburger {
+       border-top: 2px solid;
+       /* Para aumentar ou diminuir a espessura da linha do hamburger */
+       width: 30px;
+       /* Para alterar a largura do hamburger */
+       color: #003f91;
+       /* Para alterar a cor do hamburger */
+    }
+    #hamburger::after,
+    #hamburger::before {
+       content: '';
+       display: block;
+       width: 30px;
+       /* Altera a largura do hamburger, juntamente com o width anterior */
+       height: 2px;
+       background: currentColor;
+       margin-top: 4px;
+       /* Altera o espaçamento, entre as linhas do hamburger */
+       position: relative;
+       border-top: 2px solid;
+       /* Para aumentar e diminuir a espessura da linha do hamburger, juntamente com o border-top anterior*/
+    }
+    #nav.active #hamburger {
+       border-top-color: transparent;
+    }
+    #nav.active #hamburger::before {
+       transform: rotate(135deg);
+    }
+    #nav.active #hamburger::after {
+       transform: rotate(-135deg);
+       top: -6px;
+    }
+  } 
+  /* Fim Estilo Media >> Mobile */
+  
+
+
+  /* Início estilo Footer (rodapé) */
+  .rodape {
+    padding: 50px 50px 0;
+    
+   }
+   .rodape .container #logo-rodape img { 
+    height: 50%;
+    width: 50%;
+    padding-left: 10px;
+    transition: transform  .3s;
+    display: block;
+    border-radius: 15px;
+   }
+   .rodape .container #logo-rodape img:hover{
+    transform: scale(1.5);
+    box-shadow: 0px 0px 20px  #886401;
+   }
+   .rodape .info-contato p {
+    margin: 0;
+   }
+   .rodape .linkFooter {
+    text-decoration: none;
+    color: rgba(145, 84, 4, 0.986);
+    font-size: 10px;
+    margin-left: 0.7rem;
+    font-family: 'Henny Penny';
+    }
+    .rodape .linlFooter:hover {
+        font-weight: bold;
+    }
+    .rodape .redes-sociais {
+        display: inline-block;
+    }
+    .rodape .redes-sociais img {
+        width: 50px;
+        height: 50px;
+        padding-left: 0;
+        margin-left: 0.8rem;
+        transition: transform .3s;
+        border-radius: 15px;
+    /* border-radius = Arredondando as extremidades da forma */
+    }
+    .rodape .redes-sociais img:hover {
+        z-index: 1;
+        transform:scale(1.5);
+        box-shadow:0 0 10px #886401;       
+    }
+    .rodape p.direitos {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+
+   /* Fim estilo Footer (rodapé) */
+/* Início estilo Mobile > Tablets */
+@media screen and (max-width: 1200px) {
+    .menu-header {
+        width: 60%;
+
+    }
+    .conteudo-sobre {
+        flex-direction: column;
+        align-items: center;
+    }
+    .imagem-sobre {
+        width: 80%;
+
+    }
+    .texto-sobre {
+        width: 80%;
+        margin-top: 45px;
+        display: flex;
+        flex-direction: column;
+        height: 430px;
+        justify-content: space-between;
+
+    }
+    .conteudo-info {
+        align-items: center;
+        
+    }
+    .conteudo-endereco {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 660px;
+        justify-content: space-between;
+    }
+    .conteudo-endereco h2 {
+        align-self: flex-start;
+
+    }
+    .texto-endereco p {
+        width:  100%;
+
+    }
+
+
+
+
+
+}
+
+
+
+/* Fim estilo Mobile > Tablets */

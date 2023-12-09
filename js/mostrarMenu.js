@@ -1,18 +1,20 @@
-function mostrarMenu () {
-    var menu = document.getElementById("menu-header");
-    var icone = document.getElementById("icone-menu");
+// Script responsável pela automação do hamburger
 
-    if (getComputedStyle(menu).display == 'none') {
-        menu.style.display = "flex";
-        icone.classList.remove ("fa-bars");
-        icone.classList.add ("fa-times");
-        // Mudando o class para fa-times
-    } else {
-        menu.style.display = "none";
-        icone.classList.remove ("fa-times");
-        icone.classList.add ("fa-bars");
-        // Mudando o class para fa-bars [ icone barras ]
-    } 
+const btnMobile = document.getElementById('btn-mobile');
+// Const >> declara a nossa variável no uso do decorrer do código
 
-
+function toggleMenu(event) {
+    if (event.type === 'touchstart') event.preventDefault();
+    const nav = document.getElementById('nav');
+    nav.classList.toggle('active');
+    const active = nav.classList.constains('active');
+    event.currentTarget.setAttribute('aria-expanded', active);
+     if (active) {
+        event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
+     } else {
+        event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
+     }
 }
+
+btnMobile.addEventListener('click', toggleMenu)
+btnMobile.addEventListener('touchstart', toggleMenu)
