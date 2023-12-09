@@ -1,6 +1,11 @@
   @import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
 
 /* Início estilo carousel */
+  body,
+  ul {
+    margin: 0px;
+    padding: 0px;
+  }
    #menu a {
     font-size: 22px;
     /* border-bottom-right-radius: 15px; */
@@ -50,6 +55,7 @@
       box-sizing: border-box;
       height: 70px;
       padding: 1rem;
+      padding-top: px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -198,3 +204,100 @@
 
 
 /* Fim estilo Banner Home */
+/* Início whatsapp */
+.whatsapp {
+    position: fixed;
+    top: 800px;
+    left: 15px;
+    z-index: 200px;
+}
+.whatsapp img {
+    height: 60px;
+}
+/* Início efeito pulse */
+.whatsapp .pulse{
+    animation: pulse 0.7s infinite;
+    margin: 0 auto;
+    display: table;
+    margin-top: 50px;
+    animation-direction: alternate;
+    -webkit-animation-name: pulse ;
+    animation-name: pulse;
+}
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform:scale(1);
+        -webkit-filter: brightness(100%);
+    }
+    100%{
+        -webkit-transform: scale(1.1);
+        -webkit-filter: brightness(110%);
+    }
+    }
+     @keyframes pulse {
+        0% {
+            transform: scale(1);
+            filter: brightness(100%);
+        }
+        100% {
+            transform: scale(1.1);
+            filter: brightness(110%);                     
+        }
+     }
+
+/* Fim efeito pulse */
+
+/* Fim whatsapp */
+  /* Início estilo Footer (rodapé) */
+  .rodape {
+    padding: 50px 50px 0;
+    
+   }
+   .rodape .container #logo-rodape img { 
+    height: 50%;
+    width: 50%;
+    padding-left: 10px;
+    transition: transform  .3s;
+    display: block;
+   }
+   .rodape .container #logo-rodape img:hover{
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.87) ;
+   }
+   .rodape .info-contato p {
+    margin: 0;
+   }
+   .rodape .linkFooter {
+    text-decoration: none;
+    color: #0852c0;
+    font-size: 10px;
+    margin-left: 0.7rem;
+    font-family: 'Henny Penny';
+    }
+    .rodape .linlFooter:hover {
+        font-weight: bold;
+    }
+    .rodape .redes-sociais {
+        display: inline-block;
+    }
+    .rodape .redes-sociais img {
+        width: 50px;
+        height: 50px;
+        padding-left: 0;
+        margin-left: 0.8rem;
+        transition: transform .3s;
+        border-radius: 15px;
+    /* border-radius = Arredondando as extremidades da forma */
+    }
+    .rodape .redes-sociais img:hover {
+        z-index: 1;
+        transform:scale(1.5);
+        box-shadow:0 0 10px rgba(0,0,0,0.446)        
+    }
+    .rodape p.direitos {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+
+   /* Fim estilo Footer (rodapé) */
