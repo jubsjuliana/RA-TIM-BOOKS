@@ -1,5 +1,149 @@
 @import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap%27');
-  
+
+
+/* Início estilo carousel */
+#menu a {
+    font-size: 22px;
+    /* border-bottom-right-radius: 15px; */
+    /* border-bottom-left-radius: 15px; */
+    /* border-bottom: 4px solid #e4d07a; */
+    color: rgba(13, 21, 88, 0.747);
+     text-decoration: none;
+     /* font-family: sans-serif; */
+     /* font-family: 'Metal Mania', sans-serif; */
+     font-family: 'Henny Penny';
+     font-weight: 600;
+     transition: 0.4s;
+     text-align: center;
+     padding: 0 0.4em 0.2em 0.4em;
+     /* top - rigth - botton - left */
+ }
+
+#menu a:hover {
+    /* background: rgba(0, 0, 0, 0.05); */
+    font-size: 24px;
+    /* border-bottom-left-radius: 15px; */
+    /* border-bottom-right-radius:15px; */
+    /* border-collor: #006ccb; */
+    border-left:  4px solid #080677;
+    box-shadow: 1px 1px 2px #085ea585;
+}
+#carouselExampleInterval {
+    position: relative;
+    z-index: 10;
+    padding-top: 10px;
+    box-shadow: 3px 3px 6px hsla(0, 0%, 0%, 0.829); 
+   }
+   
+   /* Fim estilo carousel */
+   /* Início CSS estilo header */
+   #logo {
+    font-size: 1.5rem;
+    }
+    #logo img {
+        height: 80px;
+    }
+    #logo img:hover{
+        box-shadow: 2px 2px 4px #0d00a0;
+        transition: 0.3s;
+    }
+    #header {
+      box-sizing: border-box;
+      height: 80px;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      
+  }
+  #menu {
+      display: flex;
+      list-style: none;
+      gap: 0.5rem;
+  }
+  #btn-mobile {
+      display: none;
+  }
+  /* Fim CSS estilo header */
+  /* Início estilo carousel */
+
+#carouselExampleInterval {
+    position: relative;
+    z-index: 10;
+    padding-top: 10px;
+    box-shadow: 3px 3px 6px hsl(226, 11%, 64%); 
+   }
+   
+   /* Fim estilo carousel */
+   /* Início Estilo Media >>Mobile */
+@media (max-width: 790px) {
+    #menu{
+        display: block;
+        position: absolute;
+        width: 15em;
+        top: 70px;
+        right: 0px;
+        background: #e7e7e7;
+        transition: 0.6s;
+        z-index: 1000;
+        height: 0px;
+        padding-left: 5px;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    #menu li {
+        padding-top: 30px;
+        padding-bottom: 0px;
+        margin: 0 1rem;
+        border-bottom: #07227ebd;
+    }
+    #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: hidden;        
+    }
+    #btn-mobile {
+        display: flex;
+        padding: 0.5rem;
+        font: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;        
+    }
+    #hamburger {
+        border-top: 2px solid;
+        /* Para aumentar ou diminuir a espessura da linha do hamburger */
+        width:  30px;
+        /* Para alterar a largura do hamburge */
+        color: #083aa585;
+        /* Para alterar a cor do hamburge */
+    }
+    #hamburger::after,
+    #hamburger::before {
+        content: '';
+        display: block;
+        width: 30px;
+        /* Altera a largura do hamburger, justamente com o width anterior */
+        height: 2px;
+        background: currentColor;
+        margin-top:  4px;
+        /* Altera o espaçamento, entre as linhas do hamburger */
+        position: relative;
+        border-top: 2px solid;
+        /* Para diminuir e aumentar a espessura da linha do hamburger,juntamente com o border-top anterior */        
+    }
+    #nav.active #hamburger {
+        border-top-color:transparent ;        
+    }
+    #nav.active #hamburger::before {
+        transform:rotate(135deg) ;
+    }
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}
 
 h2 {
     font-family: 'Henny Penny' !important;
@@ -7,10 +151,10 @@ h2 {
 /* Início estilo galeria */
 .galeria{
     background-color: rgb(245, 151, 122);
-    padding-top: 20px;
+    padding-top: 0px;
 }
 .galeria {
-    margin: 60px auto 20px;
+    margin: 0px auto 20px;
     /* Quando tivermos 4 valores no margin = top/ right/ botton/ left . Exemplo: margin: 60px 60px 60px 60px; */
     /* Quando tivermos 3 valores = top/ right and left/ botton > Exemplo margin: 60px auto 60px; */
     /* Quando tivermos 2 valores será = top and botton/ right and left > Exemplo margin: 60px 30px; */
@@ -18,15 +162,16 @@ h2 {
     /* Essa regra se aplica também ao padding */
 }
 .galeria .container {
-    margin-left: 11%;
+    margin-left: 15%;
 }
 .galeria h2 {
     text-align: center;
-    font-size: 24px;
+    font-size: 45px;
+    margin-top: 25px;
 }
 .galeria p { 
     text-align: center;
-    width: 50%;
+    width: 30%;
     margin: 14px auto 50px;
 }
 .galeria .gallery {
@@ -98,7 +243,7 @@ h2 {
 .rodape .container #logo-rodape img  { 
     height: 50%;
     width: 50%;
-    padding-left: 10px;
+    padding-left: 25px;
     transition: transform .3s;
     display: block;
 }
@@ -107,12 +252,20 @@ h2 {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 .rodape .info-contato p {
-    margin: 0;    
+    margin: 30; 
+   
 }
 .rodape a {
     text-decoration: none;
     color: #000;
     font-size: 13px;
+}
+.rodape .linkFooter {
+    text-decoration: none;
+    color: #0852c0;
+    font-size: 15px;
+    margin-left: 0.7rem;
+    font-family: 'Henny Penny';
 }
 .rodape .linkFooter:hover {
     font-weight: bold;
@@ -231,138 +384,7 @@ text-align: center;
 } 
 /* Fim estilo Destaque */
 
-/* Início estilo galeria */
-.galeria {
-    margin: 60px auto 20px;
-    /* Quando tivermos 4 valores no margin = top/ right/ botton/ left . Exemplo: margin: 60px 60px 60px 60px; */
-    /* Quando tivermos 3 valores = top/ right and left/ botton > Exemplo margin: 60px auto 60px; */
-    /* Quando tivermos 2 valores será = top and botton/ right and left > Exemplo margin: 60px 30px; */
-    /* Quando tivermos 1 valores será = top, botton, right and left serão identicos > Exemplo margin: 60px;*/
-    /* Essa regra se aplica também ao padding */
-}
-.galeria .container {
-    margin-left: 11%;
-}
-.galeria h2 {
-    text-align: center;
-    font-size: 24px;
-}
-.galeria p { 
-    text-align: center;
-    width: 70%;
-    margin: 14px auto 50px;
-}
-.galeria .gallery {
-    width: 30%;
-    margin: 14px auto 50px;
-}
-.galeria .gallery img {
-    width: 100%;
-    height: 100%;
-    -webkit-transition: -webkit-transform .5s ease;
-    transition: transform .5s ease;
-    display: block;
-}
-.galeria .gallery img:hover {
-    -webkit-transform: scale(1.9);
-    transform: scale(1.9);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-/* fim estilo galeria */
 
-/* Início Whatsapp*/
-.whatsapp {
-    position: fixed;
-    top: 400px;
-    right: 20px;
-    z-index: 100;    
-}
-.whatsapp img {
-    height: 60px;
-}
-/* Início efeito pulse */
-.whatsapp .pulse {
-    animation: pulse 0.7s infinite;
-    margin: 0 auto;
-    display: table;
-    margin-top: 50px;
-    animation-duration: alternate;
-    -webkit-animation-name: pulse;
-    animation-name: pulse;
-}
-@-webkit-keyframes pulse {
- 0% {
-    -webkit-transform: scale(1);
-    -webkit-filter: bringhtness(100%);
- }
- 100% {
-    -webkit-transform: scale(1.1);
-    -webkit-filter: bringhtness(110%);
- }
-}
-
-@keyframes pulse {
-0% {
-    transform: scale(1);
-    filter: brightness(100%);
-}
-
-100%{
-   transform: scale(1.1);
-     filter: brightness(110%);
-}
-}
-/* Fim efeito pulse */
-/* Fim Whatsapp*/
-/* Início Estilo Footer */
-.rodape {
-    padding: 50px 50px 0;
-}
-.rodape .container #logo-rodape img  { 
-    height: 50%;
-    width: 50%;
-    padding-left: 10px;
-    transition: transform .3s;
-    display: block;
-}
-.rodape .container #logo-rodape img:hover {
-    transform: scale(1.5);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-}
-.rodape .info-contato p {
-    margin: 0;    
-}
-.rodape a {
-    text-decoration: none;
-    color: #000;
-    font-size: 13px;
-}
-.rodape .linkFooter:hover {
-    font-weight: bold;
-}
-.rodape .redes-sociais {
-    display: inline-block;
-}
-.rodape .redes-sociais img {
-    width: 50px;
-    height: 50px;
-    padding-left: 0;
-    margin-left: 0.8rem;
-    transition: t ransform .3s;
-    border-radius: 15px;
-    /* border-radius = arredondandoas extremidades da forma */
-}
-.rodape .redes-sociais img:hover {
-    z-index: 1;
-    transform: scale(1.5);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.446);
-
-}
-.rodape p.direitos{
-    text-align: center;
-    margin-top: 40px;
-}
-/* Fim Estilo Footer */
 /*Início estilo 360° */
 
 .embed-container {
