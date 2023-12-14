@@ -1,19 +1,19 @@
-// Script responsável pela automoção do menu hamburger
+// Script responsável pela automação do hamburger
 
 const btnMobile = document.getElementById('btn-mobile');
-// const >> declara a nossa variável, no uso decorrer do códico 
+// Const >> declara a nossa variável no uso do decorrer do código
 
 function toggleMenu(event) {
-    if (event.type === 'touchstart') event.preventDeFault();
+    if (event.type === 'touchstart') event.preventDefault();
     const nav = document.getElementById('nav');
-      nav.classList.toggle('active');
-    const active = nav.classList.contains('active');
+    nav.classList.toggle('active');
+    const active = nav.classList.constains('active');
     event.currentTarget.setAttribute('aria-expanded', active);
-    if (active) {
+     if (active) {
         event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
-      } else {
-        event.currentTarget.setAttribute('arial-label', 'Abrir Menu');
-    }
+     } else {
+        event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
+     }
 }
 
 btnMobile.addEventListener('click', toggleMenu)
