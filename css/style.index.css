@@ -11,7 +11,7 @@
     /* border-bottom-right-radius: 15px; */
     /* border-bottom-left-radius: 15px; */
     /* border-bottom: 4px solid #e4d07a; */
-    color: rgb(48, 175, 214);
+    color: rgb(36, 105, 255);
      text-decoration: none;
      /* font-family: sans-serif; */
      /* font-family: 'Metal Mania', sans-serif; */
@@ -38,6 +38,10 @@
     padding-top: 10px;
     box-shadow: 3px 3px 6px hsla(0, 0%, 0%, 0.829); 
    }
+.carrosel-item img {
+    height: 634px;
+   
+}
    
    /* Fim estilo carousel */
    /* Início CSS estilo header */
@@ -258,17 +262,18 @@
     padding-left: 10px;
     transition: transform  .3s;
     display: block;
+    border-radius: 15px;
    }
    .rodape .container #logo-rodape img:hover{
     transform: scale(1.5);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.87) ;
+    box-shadow: 0 0 10px rgb(36, 105, 255) ;
    }
    .rodape .info-contato p {
     margin: 0;
    }
    .rodape .linkFooter {
     text-decoration: none;
-    color: #0852c0;
+    color: rgb(36, 105, 255);
     font-size: 10px;
     margin-left: 0.7rem;
     font-family: 'Henny Penny';
@@ -291,7 +296,7 @@
     .rodape .redes-sociais img:hover {
         z-index: 1;
         transform:scale(1.5);
-        box-shadow:0 0 10px rgba(0,0,0,0.446)        
+        box-shadow:0 0 10px rgb(36, 105, 255);        
     }
     .rodape p.direitos {
         text-align: center;

@@ -291,11 +291,12 @@ h2 {
     padding-left: 25px;
     transition: transform .3s;
     display: block;
+    border-radius: 15px;
 }
 
 .rodape .container #logo-rodape img:hover {
     transform: scale(1.5);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgb(125, 2, 182);
 }
 
 .rodape .info-contato p {
